@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Image Gallery</title>
+<link rel="stylesheet" href="./website_files/style.css"></head>
+<body>
+<!-- Heading Name -->
+<div class="heading">
+	<h1> cartoon Image Gallery</h1>
+</div>
+	<!-- Image Gallery section all image in one div -->
+	<div class="gallery">
+<img src="./website_files/5116e98aade7ed5f9b7470af17d763fb.jpg" alt="Image 2" class="gallery-img" onclick="showImage(src)">
+<img src="./website_files/doraemon-flying-with-friends-1qjwumjwjhd222v4.jpg" alt="Image 3" class="gallery-img" onclick="showImage(src)">
+<img src="./website_files/medium-doraemon-cartton-character-hd-wallpaper-on-fine-art-paper-original-imagbukjx4mwxqkn.jpeg" alt="Image 4" class="gallery-img" onclick="showImage(src)">
+<img src="./website_files/HD-wallpaper-nobita-top-best-quality-nobita-background-stand-by-me-2.jpg" alt="Image 5" class="gallery-img" onclick="showImage(src)">
+<img src="./website_files/desktop-wallpaper-25-stocks-at-doraemon-group-doraemon-3d.jpg" alt="Image 6" class="gallery-img" onclick="showImage(src)">
+<img src="./website_files/6239139.png" alt="Image 7" class="gallery-img" onclick="showImage(src)">
+<img src="./website_files/desktop-wallpaper-doremon-finger-cartoon.jpg" alt="Image 8" class="gallery-img" onclick="showImage(src)">
+<img src="./website_files/anime-doraemon-wallpaper-preview.jpg" alt="Image 9" class="gallery-img" onclick="showImage(src)">
+<img src="./website_files/5bd2b872869b5-wallpaper-preview.jpg" alt="Image 10" class="gallery-img" onclick="showImage(src)">		 
+</div>
+
+<!-- Image containter where image will show in big size -->
+	<div class="image-popup-container" id="imagePopup">
+		<span class="close-button" onclick="closeImage()">×</span>
+		<img src="http://127.0.0.1:5500/index.html" alt="Popup Image" id="popupImage">
+	</div>
+	<script src="./website_files/javascript.js.download"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>

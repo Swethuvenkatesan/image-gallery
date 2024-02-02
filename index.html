@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Image Gallery</title>
+</head>
+<body>
+<!-- Heading Name -->
+<div class="heading">
+	<h1> cartoon Image Gallery</h1>
+</div>
+	<!-- Image Gallery section all image in one div -->
+	<div class="gallery">
+<img src=
+"https://i.pinimg.com/736x/51/16/e9/5116e98aade7ed5f9b7470af17d763fb.jpg" 
+alt="Image 2" class="gallery-img" onclick="showImage(src)">
+<img src="https://wallpapers.com/images/hd/doraemon-flying-with-friends-1qjwumjwjhd222v4.jpg"
+alt="Image 3" class="gallery-img" onclick="showImage(src)">
+<img src="https://rukminim2.flixcart.com/image/850/1000/kzygpzk0/poster/4/3/z/medium-doraemon-cartton-character-hd-wallpaper-on-fine-art-paper-original-imagbukjx4mwxqkn.jpeg?q=90&crop=false" alt="Image 4" class="gallery-img" onclick="showImage(src)">
+<img src="https://w0.peakpx.com/wallpaper/200/967/HD-wallpaper-nobita-top-best-quality-nobita-background-stand-by-me-2.jpg" alt="Image 5" class="gallery-img" onclick="showImage(src)">
+<img src="https://e1.pxfuel.com/desktop-wallpaper/274/668/desktop-wallpaper-25-stocks-at-doraemon-group-doraemon-3d.jpg" 
+alt="Image 6" class="gallery-img" onclick="showImage(src)">
+<img src="https://wallpaperaccess.com/full/6239139.png"
+alt="Image 7" class="gallery-img" onclick="showImage(src)">
+<img src="https://e0.pxfuel.com/wallpapers/386/647/desktop-wallpaper-doremon-finger-cartoon.jpg" 
+alt="Image 8" class="gallery-img" onclick="showImage(src)">
+<img src="https://c4.wallpaperflare.com/wallpaper/695/297/220/anime-doraemon-wallpaper-preview.jpg"
+alt="Image 9" class="gallery-img" onclick="showImage(src)">
+<img src="https://c4.wallpaperflare.com/wallpaper/478/78/327/5bd2b872869b5-wallpaper-preview.jpg" 
+alt="Image 10" class="gallery-img" onclick="showImage(src)">		 
+</div>
+
+<!-- Image containter where image will show in big size -->
+	<div class="image-popup-container" id="imagePopup">
+		<span class="close-button" onclick="closeImage()">×</span>
+		<img src="" alt="Popup Image" id="popupImage">
+	</div>
+	<script src="javascript.js"></script>
+</body>
+</html>
